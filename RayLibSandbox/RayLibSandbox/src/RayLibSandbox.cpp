@@ -4,7 +4,6 @@ int main() {
     int screenWidth = 800;
     int screenHeight = 450;
 
-	raylib::Color background(RAYWHITE);
     raylib::Window window(screenWidth, screenHeight, "raylib-cpp - basic window");
     raylib::Texture logo("raylib_logo.png");
 
@@ -14,7 +13,7 @@ int main() {
     {
         BeginDrawing();
 
-        background.ClearBackground();
+        window.ClearBackground(RAYWHITE);
 
         DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
 
